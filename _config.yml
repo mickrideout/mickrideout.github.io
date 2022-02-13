@@ -38,3 +38,8 @@ author:
 
 # Custom vars
 version: 3.0.0
+
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
