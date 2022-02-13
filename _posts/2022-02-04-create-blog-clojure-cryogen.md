@@ -3,6 +3,7 @@ title: Create a Blog With Clojure and Cryogen
 layout: :post
 date: 2022-02-04
 categories: clojure 
+comments: true
 ---
  
 I wanted to create this blog with Clojure and ["Cryogen"](http://cryogenweb.org/) fit the bill perfectly. Its moto succinctly states its intention "Static sites generated with Clojure". The steps below are derived from ["Practical.li - Quick Start Guide"](https://practical.li/blog/posts/2016-01-07-docs/)
