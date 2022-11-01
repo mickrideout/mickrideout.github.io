@@ -14,7 +14,7 @@ Import the training dataset into RapidMiner by clicking the "+ Import Data" butt
 Next lets generate a correlation matrix in order to see which attributes we should keep and which we should dispense with.
 
 
-![Correlation matrix process](assets/2022-10-31-kaggle-titanic-rapidminer/correlation-matrix-process.png)
+![Correlation matrix process](/assets/2022-10-31-kaggle-titanic-rapidminer/correlation-matrix-process.png)
 
 
 Drag the training dataset from the repository tab to the design view's process tab. Then in the Operators tab search for "correlation" and drag the Correlation Matrix into the process tab.
@@ -22,7 +22,7 @@ Connect the training dataset output "out" node to the correlation matrix "exa" i
 
 Then click the play button. The correlation matrix is displayed in the Results view.
 
-![Correlation matrix result](assets/2022-10-31-kaggle-titanic-rapidminer/correlation-matrix-result.png)
+![Correlation matrix result](/assets/2022-10-31-kaggle-titanic-rapidminer/correlation-matrix-result.png)
 
 
 We will use the attributes: Pclass, Sex, Fare and Age (even though it is not highly correlated, binning may achieve better correlation)
@@ -32,7 +32,7 @@ We will use the attributes: Pclass, Sex, Fare and Age (even though it is not hig
 Cross validation allows us to reserve a portion of the training dataset and use it to evaluate the model's performance.
 Firstly, we need to filter out only the attributes we're interested in, discretise and bin the Age attribute, then set the role for Survived to be a label:
 
-![Data preparation](assets/2022-10-31-kaggle-titanic-rapidminer/data-preparation.png)
+![Data preparation](/assets/2022-10-31-kaggle-titanic-rapidminer/data-preparation.png)
 Set each operator's parameters:
  * **Select Attribute** - attribute filter type: subset, attributes: Age, Fare, Pclass, Sex, Survived
  * **Discretize by Binning** - attribute filter type: single, attribute: Age, number of bins: 3
@@ -44,18 +44,18 @@ Much of the above could be performed on the dataset itself in the repository, bu
 For the cross validation operator set the operator's process by double clicking the cross validation box and cross validation process to be the following:
 
 
-![Cross Validation Process](assets/2022-10-31-kaggle-titanic-rapidminer/cross-validation.png)
+![Cross Validation Process](/assets/2022-10-31-kaggle-titanic-rapidminer/cross-validation.png)
 
 Click the play button and in the results view you can see the cross validation results:
 
 
-![Cross Validation Results](assets/2022-10-31-kaggle-titanic-rapidminer/accuracy.png)
+![Cross Validation Results](/assets/2022-10-31-kaggle-titanic-rapidminer/accuracy.png)
 
 ### Prediction Generation
 
 We'll now remove the cross validation operator and add the decision tree and apply model operator:
 
-![Titanic process](assets/2022-10-31-kaggle-titanic-rapidminer/titanic-process.png)
+![Titanic process](/assets/2022-10-31-kaggle-titanic-rapidminer/titanic-process.png)
 
 Import the test dataset with default values. Add the test dataset to the process view.
 Then copy the Select Attribute, Discritize and Numerical to Binominal from the training set operators. Modified the copied operator:
