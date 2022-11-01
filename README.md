@@ -50,6 +50,12 @@ Folks wishing to use Jekyll's templates and styles can do so with a little bit o
 
 ### 3. Running locally
 
+To run with Docker:
+```bash
+$ docker pull jekyll/jekyll
+$ docker run --rm --volume="$PWD:/srv/jekyll:Z" --publish [::1]:4000:4000 jekyll/jekyll jekyll serve
+```
+
 To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/poole` (or whatever your Jekyll site's root directory is named):
 
 ```bash

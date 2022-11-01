@@ -41,3 +41,8 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+*.iml
+*.idea
+*.jekyll-cache
+*_site
