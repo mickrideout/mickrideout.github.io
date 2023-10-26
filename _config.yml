@@ -41,5 +41,5 @@ version: 4.0.0
 
 pages_list:
   About: '/about'
-  Archive: '/archive'
+  Posts: '/posts'
   Feed: '/atom.xml'
