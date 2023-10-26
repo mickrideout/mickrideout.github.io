@@ -1,8 +1,6 @@
 ---
 title: Create a Blog With Clojure and Cryogen
 layout: :post
-date: 2022-02-04
-categories: clojure 
 comments: true
 ---
  
