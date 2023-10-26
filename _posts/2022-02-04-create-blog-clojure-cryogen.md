@@ -1,5 +1,5 @@
 ---
-layout: :post
+layout: post
 title: Create a Blog With Clojure and Cryogen
 comments: true
 ---
