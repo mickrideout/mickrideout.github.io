@@ -16,7 +16,7 @@ The full list of chatbots it can current access is:
 * Hugging Face
 * Minstrel
 
-You can download the free android version ![here](https://play.google.com/store/apps/details?id=com.backproplabs.ask_any_ai_chatbot) and the ad free version ![here](https://play.google.com/store/apps/details?id=com.backproplabs.ask_any_ai_chatbot.paid)
+You can download the free android version [here](https://play.google.com/store/apps/details?id=com.backproplabs.ask_any_ai_chatbot) and the ad free version [here](https://play.google.com/store/apps/details?id=com.backproplabs.ask_any_ai_chatbot.paid)
 
 
 Leave a comment if you would like a chatbot added to the list.
